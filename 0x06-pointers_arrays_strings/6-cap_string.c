@@ -14,19 +14,19 @@ char *cap_string(char *str)
 		while (!(str[index] >= 'a' && str[index] <= 'z'))
 			index++;
 
-		if (ster[index - 1] == ' ' ||
-				ster[index - 1] == '\t' ||
-				ster[index - 1] == '\n' ||
-				ster[index - 1] == ',' ||
-				ster[index - 1] == ';' ||
-				ster[index - 1] == '.' ||
-				ster[index - 1] == '!' ||
-				ster[index - 1] == '?' ||
-				ster[index - 1] == '"' ||
-				ster[index - 1] == '(' ||
-				ster[index - 1] == ')' ||
-				ster[index - 1] == '{' ||
-				ster[index - 1] == '}' ||
+		if (str[index - 1] == ' ' ||
+				str[index - 1] == '\t' ||
+				str[index - 1] == '\n' ||
+				str[index - 1] == ',' ||
+				str[index - 1] == ';' ||
+				str[index - 1] == '.' ||
+				str[index - 1] == '!' ||
+				str[index - 1] == '?' ||
+				str[index - 1] == '"' ||
+				str[index - 1] == '(' ||
+				str[index - 1] == ')' ||
+				str[index - 1] == '{' ||
+				str[index - 1] == '}' ||
 				index == 0)
 			str[index] -= 32;
 
